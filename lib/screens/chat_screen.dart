@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flashchat/MainProfileList.dart';
+import 'package:flashchat/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flashchat/constants.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -96,7 +97,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 prefs.remove('email');
                 await _auth.signOut();
 
-                Navigator.pop(context);
+                Navigator.pushNamed(context, LoginScreen.id);
                 // _auth.signOut();
                 // Navigator.pop(context);
               }),

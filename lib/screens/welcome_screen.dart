@@ -62,11 +62,11 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ),
               ],
             ),
-            Center(
-                child: AnimatedTextKit(
-              animatedTexts: [FlickerAnimatedText('Made By Navidul')],
-              isRepeatingAnimation: true,
-            )),
+            // Center(
+            //     child: AnimatedTextKit(
+            //   animatedTexts: [FlickerAnimatedText('Made By Navidul')],
+            //   isRepeatingAnimation: true,
+            // )),
             SizedBox(
               height: 48.0,
             ),

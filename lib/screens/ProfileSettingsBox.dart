@@ -195,6 +195,21 @@ class ProfilePicsetState extends State<ProfilePicset>
                                         'UserProfilePic/${currentuser.email}.png')
                                     .getDownloadURL();
                                 url = downloadURL;
+                                currentuser.updatePhotoURL(url);
+                                var userdetails = await _firestore
+                                    .collection('userdetails')
+                                    .get();
+                                var k = _firestore.collection('userdetails');
+                                if (userdetails != null) {
+                                  for (var details in userdetails.docs) {
+                                    if (currentuser.email ==
+                                        details.get('email')) {
+                                      k.doc(details.id).update({
+                                        'profilepic': url,
+                                      });
+                                    }
+                                  }
+                                }
                                 pickedFile = null;
                               }
                               Navigator.pop(context);

@@ -113,17 +113,25 @@ class _ProfileStreamState extends State<ProfileStream> {
         onSelectNotification: notificationSelected);
   }
 
-  Future notificationSelected(String payload) async {}
+  Future notificationSelected(String payload) async {
+    print(payload);
+    // Provider.of<MainList>(context, listen: false).changefname(widget.name);
+    // Provider.of<MainList>(context, listen: false).changeuser(widget.email);
+    // Provider.of<MainList>(context, listen: false).changeurl(url);
+    // Navigator.pushNamed(context, ChatScreen.id);
+  }
+
   Future _showNotifications(String title, String body) async {
     var androidDetails = AndroidNotificationDetails('0', 'kaddu', 'paddu');
     await localNotifications.show(
-        0, title, body, NotificationDetails(android: androidDetails));
+        0, title, body, NotificationDetails(android: androidDetails),
+        payload: title);
   }
 
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(
-        stream: _firestore.collection('messages').snapshots(),
+        stream: _firestore.collection('messages').orderBy('time').snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return CircularProgressIndicator(
@@ -132,15 +140,17 @@ class _ProfileStreamState extends State<ProfileStream> {
           }
           List<Chatprofiles> chatprofilelist =
               Provider.of<MainList>(context, listen: false).list;
-          final messages = snapshot.data.docs;
+          final messages = snapshot.data.docs.reversed;
 
           for (var message in messages) {
             int n = 1;
             final recievermail = message.get('reciever');
-            if (recievermail == currentuser.email) {
-              for (var k in chatprofilelist) {
-                if (k.email == message.get('user')) {
+            if (recievermail == currentuser.email ||
+                message.get('user') == currentuser.email) {
+              for (int i = 0; i < chatprofilelist.length; i++) {
+                if (chatprofilelist[i].email == message.get('user')) {
                   n = 0;
+                  break;
                 }
               }
               if (n == 1) {
@@ -149,7 +159,8 @@ class _ProfileStreamState extends State<ProfileStream> {
                   email: "${message.get('user')}",
                 ));
               }
-              if (message.get('seen') == false) {
+              if (message.get('seen') == false &&
+                  message.get('reciever') == currentuser.email) {
                 _showNotifications(
                     message.get('firstname'), message.get('text'));
               }
