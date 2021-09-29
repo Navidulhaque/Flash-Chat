@@ -39,7 +39,7 @@ class _SearchcontainerState extends State<Searchcontainer> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
-                    color: Colors.lightBlueAccent,
+                    color: Colors.black,
                   ),
                 ),
                 TextField(
@@ -51,7 +51,7 @@ class _SearchcontainerState extends State<Searchcontainer> {
                     username = v;
                   },
                   decoration: buildInputDecoration(
-                      text: "Enter User email", kcolor: Colors.lightBlueAccent),
+                      text: "Enter User email", kcolor: Colors.black),
                 ),
                 SizedBox(
                   height: 10,
@@ -118,7 +118,7 @@ class _SearchcontainerState extends State<Searchcontainer> {
                   },
                   child: Text("Search User"),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.lightBlueAccent,
+                    primary: Colors.black,
                     padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                   ),
                 )

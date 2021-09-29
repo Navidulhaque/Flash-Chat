@@ -37,7 +37,7 @@ class _UserDetailsState extends State<UserDetails> {
         child: ListView(
           children: <Widget>[
             SlimyCard(
-              color: Colors.lightBlueAccent,
+              color: Colors.black,
               width: 400,
               topCardHeight: 400,
               bottomCardHeight: 200,
@@ -102,7 +102,7 @@ class _UserDetailsState extends State<UserDetails> {
               bottomCardWidget: Column(
                 children: [
                   Text(
-                    "Made with Love By NAVIDUL",
+                    "Made with Love",
                     style: TextStyle(
                         fontSize: 20,
                         color: Colors.white,

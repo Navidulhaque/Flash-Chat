@@ -38,13 +38,13 @@ class _MainChatScreenState extends State<MainChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.black,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
               context: context, builder: (context) => Searchcontainer());
         },
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.black,
         child: Icon(Icons.search),
       ),
       body: Column(
@@ -135,7 +135,7 @@ class _ProfileStreamState extends State<ProfileStream> {
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return CircularProgressIndicator(
-              backgroundColor: Colors.lightBlueAccent,
+              backgroundColor: Colors.black,
             );
           }
           List<Chatprofiles> chatprofilelist =

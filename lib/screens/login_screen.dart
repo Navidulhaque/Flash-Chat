@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   email = value;
                 },
                 decoration: buildInputDecoration(
-                    text: "Enter Your Email", kcolor: Colors.lightBlueAccent),
+                    text: "Enter Your Email", kcolor: Colors.grey),
               ),
               SizedBox(
                 height: 8.0,
@@ -63,15 +63,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   password = value;
                 },
                 decoration: buildInputDecoration(
-                    text: "Enter Your password",
-                    kcolor: Colors.lightBlueAccent),
+                    text: "Enter Your password", kcolor: Colors.grey),
               ),
               SizedBox(
                 height: 24.0,
               ),
               Buttonwidget(
                 text: "Log In",
-                buttoncolor: Colors.lightBlueAccent,
+                buttoncolor: Colors.grey,
                 onpressed: () async {
                   setState(() {
                     showspinner = true;

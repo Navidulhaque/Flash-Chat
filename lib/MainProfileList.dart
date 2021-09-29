@@ -35,8 +35,8 @@ class MainList extends ChangeNotifier {
 
   List<Chatprofiles> _chatprofilelist = [
     Chatprofiles(
-      name: "Navidul",
-      email: "navidulhaque40it@gmail.com",
+      name: "Test",
+      email: "786navidulhaque@gmail.com",
     ),
   ];
 

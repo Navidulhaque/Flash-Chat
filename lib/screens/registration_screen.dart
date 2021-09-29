@@ -52,7 +52,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   firstname = value;
                 },
                 decoration: buildInputDecoration(
-                    text: "Enter Your first name", kcolor: Colors.blueAccent),
+                    text: "Enter Your first name", kcolor: Colors.grey),
               ),
               SizedBox(
                 height: 8.0,
@@ -64,7 +64,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   lastname = value;
                 },
                 decoration: buildInputDecoration(
-                    text: "Enter Your Last name", kcolor: Colors.blueAccent),
+                    text: "Enter Your Last name", kcolor: Colors.grey),
               ),
               SizedBox(
                 height: 8.0,
@@ -77,7 +77,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   email = value;
                 },
                 decoration: buildInputDecoration(
-                    text: "Enter Your Email", kcolor: Colors.blueAccent),
+                    text: "Enter Your Email", kcolor: Colors.grey),
               ),
               SizedBox(
                 height: 8.0,
@@ -91,13 +91,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   password = value;
                 },
                 decoration: buildInputDecoration(
-                    text: "Enter Your Password", kcolor: Colors.blueAccent),
+                    text: "Enter Your Password", kcolor: Colors.grey),
               ),
               SizedBox(
                 height: 24.0,
               ),
               Buttonwidget(
-                buttoncolor: Colors.blueAccent,
+                buttoncolor: Colors.grey,
                 text: 'Register',
                 onpressed: () async {
                   setState(() {

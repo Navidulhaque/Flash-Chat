@@ -110,7 +110,7 @@ class _ChatScreenState extends State<ChatScreen> {
             Text('${Provider.of<MainList>(context, listen: false).firstname}'),
           ],
         ),
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.black,
       ),
       body: SafeArea(
         child: Column(
@@ -180,7 +180,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               ],
                               androidUiSettings: AndroidUiSettings(
                                   toolbarTitle: 'Cropper',
-                                  toolbarColor: Colors.lightBlueAccent,
+                                  toolbarColor: Colors.black,
                                   toolbarWidgetColor: Colors.white,
                                   initAspectRatio:
                                       CropAspectRatioPreset.original,
@@ -234,7 +234,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               ],
                               androidUiSettings: AndroidUiSettings(
                                   toolbarTitle: 'Cropper',
-                                  toolbarColor: Colors.lightBlueAccent,
+                                  toolbarColor: Colors.black,
                                   toolbarWidgetColor: Colors.white,
                                   initAspectRatio:
                                       CropAspectRatioPreset.original,
@@ -306,7 +306,7 @@ class _MessageStreamState extends State<MessageStream> {
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return CircularProgressIndicator(
-              backgroundColor: Colors.lightBlueAccent,
+              backgroundColor: Colors.black,
             );
           }
           final messages = snapshot.data.docs.reversed;

@@ -54,7 +54,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 AnimatedTextKit(
                   animatedTexts: [
                     TypewriterAnimatedText(
-                      'Flash Chat',
+                      'Messenger',
                       textStyle: kcolorizeTextStyle,
                     ),
                   ],
@@ -71,14 +71,14 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 48.0,
             ),
             Buttonwidget(
-              buttoncolor: Colors.lightBlueAccent,
+              buttoncolor: Colors.grey,
               text: 'Log In',
               onpressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
               },
             ),
             Buttonwidget(
-              buttoncolor: Colors.blueAccent,
+              buttoncolor: Colors.grey,
               text: 'Register',
               onpressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
