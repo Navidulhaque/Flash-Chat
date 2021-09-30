@@ -1,6 +1,6 @@
 # flashchat
 
-A new Flutter application.
+A new Flutter application.You have to download your own google-json flie from firebase and to the required changes
 
 ## Getting Started
 
