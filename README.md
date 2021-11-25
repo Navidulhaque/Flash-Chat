@@ -28,6 +28,6 @@
 <img height=590 width=300 src="https://user-images.githubusercontent.com/58352541/143478294-99423da7-4614-4171-88d4-4affae4cb134.jpeg"/>
 
 
-## View Your Profile
+## View or update Your Profile
 <img height=590 width=300 src="https://user-images.githubusercontent.com/58352541/143478371-9d48fe9f-4b77-40d8-825a-546b32d7476f.jpeg"/>
 
