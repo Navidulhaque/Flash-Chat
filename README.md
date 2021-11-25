@@ -1,16 +1,27 @@
 # flashchat
 
-A new Flutter application.You have to download your own google-json flie from firebase and to the required changes
+**Developed using Flutter and Firebase. This App has Secure Authentication using Firebase.** 
+<br/>
+**Chat with registered users, send pictures and emojis.**
+<br/>
+**Maintain your profile with Profile Picture, Status**
 
-## Getting Started
+## Watch App [here](https://www.linkedin.com/posts/navidul-haque-7633871a5_flutterappdevelopment-flutter-dart-activity-6816609396890644480-sS30)
 
-This project is a starting point for a Flutter application.
+## You can Chat with Multiple Users
+<img height=590 width=300 src="https://user-images.githubusercontent.com/58352541/143477960-9d86b8ce-ebf5-4e9e-b459-1ecee40dde00.jpeg"/>
 
-A few resources to get you started if this is your first Flutter project:
+## View Thier Profile Picture
+<img height=590 width=300 src="https://user-images.githubusercontent.com/58352541/143478138-38aeb4bf-1e6e-41c7-b274-5a7ca8dc6d5e.jpeg"/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Chat And Send Images
+<img height=590 width=300 src="https://user-images.githubusercontent.com/58352541/143478240-990858b1-8039-48db-876c-89f1c41eeb3e.jpeg"/>
+
+## Search Any user registered on the app.
+<img height=590 width=300 src="https://user-images.githubusercontent.com/58352541/143478294-99423da7-4614-4171-88d4-4affae4cb134.jpeg"/>
+
+
+## View Your Profile
+<img height=590 width=300 src="https://user-images.githubusercontent.com/58352541/143478371-9d48fe9f-4b77-40d8-825a-546b32d7476f.jpeg"/>
+
